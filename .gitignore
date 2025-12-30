@@ -1,0 +1,24 @@
+.DS_Store
+
+# Bun / Node
+bun/node_modules/
+bun/dist/
+bun/build/
+bun/.env
+
+# Rust
+rust/target/
+rust/.env
+
+# Go
+go/bin/
+go/.env
+
+# Python
+python/.venv/
+python/__pycache__/
+python/**/*.py[cod]
+python/.env
+
+# Ruby
+ruby/.env
