@@ -1,5 +1,6 @@
 import { type ClientRegistry } from "../setup/clients";
 import { runSimpleSelects } from "./0001_simple_selects";
+import { runParseCacheHitRate } from "./0002_parse_cache_hit_rate";
 
 // -----------------------------------------------------------------------------
 // ----- runTests --------------------------------------------------------------
@@ -14,6 +15,7 @@ export async function runTests(clients: ClientRegistry) {
   console.log("Running tests...");
 
   await runSimpleSelects(clients);
+  await runParseCacheHitRate(clients);
 
   console.log("Done");
 }
